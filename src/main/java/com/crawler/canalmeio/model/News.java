@@ -1,7 +1,5 @@
 package com.crawler.canalmeio.model;
 
-import java.util.Date;
-
 public class News {
 
 	private String dataPublicacao;
@@ -9,6 +7,8 @@ public class News {
 	private String titulo;
 	
 	private String link;
+	
+	private String conteudo;
 	
 
 	public News(){
@@ -44,6 +44,14 @@ public class News {
 
 	public void setLink(String link) {
 		this.link = link;
+	}
+
+	public String getConteudo() {
+		return conteudo;
+	}
+
+	public void setConteudo(String conteudo) {
+		this.conteudo = conteudo;
 	}
 	
 	
