@@ -10,16 +10,20 @@ public class News {
 	
 	private String conteudo;
 	
+	private String miniConteudo;
+	
 
 	public News(){
 		
 	}
 	
-	public News(String dataPublicacao, String titulo, String link) {
+	public News(String dataPublicacao, String titulo, String link, String conteudo, String miniConteudo) {
 		super();
 		this.dataPublicacao = dataPublicacao;
 		this.titulo = titulo;
 		this.link = link;
+		this.conteudo = conteudo;
+		this.miniConteudo = miniConteudo;
 	}
 
 	public String getDataPublicacao() {
@@ -52,6 +56,14 @@ public class News {
 
 	public void setConteudo(String conteudo) {
 		this.conteudo = conteudo;
+	}
+
+	public String getMiniConteudo() {
+		return miniConteudo;
+	}
+
+	public void setMiniConteudo(String miniConteudo) {
+		this.miniConteudo = miniConteudo;
 	}
 	
 	

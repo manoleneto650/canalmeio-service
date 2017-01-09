@@ -42,6 +42,7 @@ public class NewsController {
 				post.setLink(elemento.select("article.category-newsletter li a[href]").attr("href"));
 				
 				Document pageArticle = Jsoup.connect(post.getLink()).get();
+				post.setMiniConteudo(pageArticle.select("section.post_content").text().substring(0, 200));
 				post.setConteudo(pageArticle.select("section.post_content").html());
 				
 				
