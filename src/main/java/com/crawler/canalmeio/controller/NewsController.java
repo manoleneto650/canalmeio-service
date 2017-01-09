@@ -42,7 +42,7 @@ public class NewsController {
 				post.setLink(elemento.select("article.category-newsletter li a[href]").attr("href"));
 				
 				Document pageArticle = Jsoup.connect(post.getLink()).get();
-				post.setConteudo(pageArticle.select("section.post_content").text());
+				post.setConteudo(pageArticle.select("section.post_content").html());
 				
 				
 				retorno.add(post);
